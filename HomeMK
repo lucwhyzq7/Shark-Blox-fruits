@@ -1,0 +1,93 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Home of Monkeys menu", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = false})
+
+local Tab = Window:MakeTab({
+	Name = "Primary",
+	Icon = "home",
+	PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+	Name = "Monkeys Hub",
+	Content = "Clique no script que quer usar e ele sera copiado, em seguida cole no solara e execute, fiz isso pois nao tem como usar tudo num script só, ficaria apenas 3 categorias do script funcionando",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+
+local function copyToClipboard(text)
+    if setclipboard then
+        setclipboard(text)
+    elseif syn then
+        syn.write_clipboard(text)
+    else
+        warn("Seu exploit não suporta copiar para a área de transferência")
+    end
+end
+
+local Section = Tab:AddSection({
+	Name = "Scripts"
+})
+
+Tab:AddButton({
+	Name = "Shop",
+	Callback = function()
+        copyToClipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/lucwhyzq7/Shark-Blox-fruits/main/ShopMK"))()')
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Setting Farm and Farm",
+	Callback = function()
+      	copyToClipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/lucwhyzq7/Shark-Blox-fruits/main/FarmMK"))()')
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Misc",
+	Callback = function()
+        copyToClipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/lucwhyzq7/Shark-Blox-fruits/main/MiscMK"))()')
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Material And Boss",
+	Callback = function()
+        copyToClipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/lucwhyzq7/Shark-Blox-fruits/main/MaterialMK"))()')
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Fruit And Raid",
+	Callback = function()
+        copyToClipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/lucwhyzq7/Shark-Blox-fruits/main/FruitMK"))()')
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Local Player",
+	Callback = function()
+        copyToClipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/lucwhyzq7/Shark-Blox-fruits/main/playerMK"))()')
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Race V4",
+	Callback = function()
+        copyToClipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/lucwhyzq7/Shark-Blox-fruits/main/raceMK"))()')
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Sea Event",
+	Callback = function()
+        copyToClipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/lucwhyzq7/Shark-Blox-fruits/main/SeaMK"))()')
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Quest And Upgrade Race",
+	Callback = function()
+        copyToClipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/lucwhyzq7/Shark-Blox-fruits/main/questMK"))()')
+  	end    
+})
