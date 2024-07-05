@@ -1,6 +1,6 @@
 ------------race v4
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Shark Menu", HidePremium = false, SaveConfig = true, ConfigFolder = "Sharkcfg", IntroEnabled = false})
+local Window = OrionLib:MakeWindow({Name = "Race of Monkeys menu", HidePremium = false, SaveConfig = true, ConfigFolder = "Sharkcfg", IntroEnabled = false})
 
 local RC = Window:MakeTab({
     Name = "Race V4",
